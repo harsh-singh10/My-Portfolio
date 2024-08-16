@@ -77,6 +77,41 @@ i{
 body{
     background: var(--body-color);
 }
+
+/* Dark   ----- */
+
+nav {
+    background-color: lightblue;
+    color: black;
+}
+
+/* Dark mode styles */
+
+
+body {
+    background-color: white;
+    color: black;
+}
+
+header, footer {
+    background-color: lightgray;
+    color: black;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+body.dark-mode header, body.dark-mode footer ,body.dark-mode nav  {
+    background-color: rgb(0, 0, 0);
+    color: rgb(97, 63, 63);
+}
+
+
+
+/* ----------------- */
 .container{
     width: 100%;
     position: relative;
@@ -549,7 +584,7 @@ footer{
     .nav-menu.responsive{
         left: 0;
     }
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         top: 80px;
         left: -100%;

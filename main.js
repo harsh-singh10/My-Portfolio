@@ -114,4 +114,19 @@ function scrollActive() {
   })
 }
 
+
+// Dark mode
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('darkModeToggle');
+  
+  if (toggleButton) {
+      toggleButton.addEventListener('click', () => {
+          const isDarkMode = document.body.classList.toggle('dark-mode');
+          toggleButton.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
+      });
+  }
+});
+// gfj --------------
+
 window.addEventListener('scroll', scrollActive)
