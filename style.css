@@ -414,6 +414,10 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+.project-box a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit color from parent */
+}
 .project-box>i{
     font-size: 50px;
     color: #00B5E7;
