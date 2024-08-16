@@ -329,7 +329,7 @@ h3{
 .about-btn button{
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    bottom: 15px;
     background: var(--first-color);
     color: var(--color-white);
     border-radius: 30px;
