@@ -583,7 +583,7 @@ footer{
 /* ----- MEDIA QUERY == 900px / RESPONSIVE ----- */
 @media only screen and (max-width: 900px) {
     .nav-button{
-        display: none;
+        /* display: none; */
     }
     .nav-menu.responsive{
         left: 0;
@@ -674,4 +674,148 @@ footer{
     .input-field{
         width: 100%;
     }
+}
+
+
+
+
+
+
+
+
+
+/* css for dark mode  --------------------- */
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode header, 
+body.dark-mode footer,
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    color: rgb(97, 63, 63);
+}
+
+/* Text Colors */
+body.dark-mode .nav-name,
+body.dark-mode .nav-link,
+body.dark-mode .active-link,
+body.dark-mode .top-header h1,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .featured-name,
+body.dark-mode .typedText,
+body.dark-mode .featured-text-info {
+    color: #f5f5f5;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+    background: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn:hover {
+    background: var(--second-color);
+    color: var(--color-white);
+}
+
+/* Scroll Button */
+body.dark-mode .scroll-btn {
+    background: #333;
+    color: #e0e0e0;
+}
+
+/* Navigation Bar */
+body.dark-mode nav {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .link:hover {
+    color: var(--second-color);
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer_menu_list a {
+    color: #ccc;
+}
+
+body.dark-mode .footer_menu_list a:hover {
+    color: var(--second-color);
+}
+
+body.dark-mode .footer-social-icons .icon {
+    background: #333;
+    color: #e0e0e0;
+}
+
+body.dark-mode .footer-social-icons .icon:hover {
+    color: var(--second-color);
+}
+
+/* Forms and Inputs */
+body.dark-mode .input-field, 
+body.dark-mode textarea {
+    background: #333;
+    color: #e0e0e0;
+    border: 2px solid #555;
+}
+
+body.dark-mode .input-field::placeholder, 
+body.dark-mode textarea::placeholder {
+    color: #999;
+}
+
+body.dark-mode .form-button>.btn {
+    background: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .form-button>.btn:hover {
+    background: var(--second-color);
+}
+
+/* About, Skills, and Project Boxes */
+body.dark-mode .about-info, 
+body.dark-mode .skills-box, 
+body.dark-mode .project-box {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    box-shadow: 1px 8px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .project-box::after {
+    background: #333;
+}
+
+body.dark-mode .project-box:hover.project-box::after {
+    background: var(--second-color);
+}
+
+body.dark-mode .project-box:hover.project-box i,
+body.dark-mode .project-box:hover.project-box>h3,
+body.dark-mode .project-box:hover.project-box>label {
+    color: var(--color-white);
+}
+
+/* Icons */
+body.dark-mode .icon:hover {
+    color: var(--second-color);
+}
+
+/* Featured Image */
+body.dark-mode .featured-image .image {
+    border: 2px solid #333;
 }
