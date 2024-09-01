@@ -1,3 +1,54 @@
+// function sendemail(){ 
+//   let parms = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     subject: document.getElementById("subject").value,
+//     message: document.getElementById("message").value,
+//   };
+
+//   emailjs.send("service_w5pzxgs", "template_v1ghogl", parms)
+//     .then((response) => {
+//       alert("Email sent successfully!");
+//     })
+//     .catch((error) => {
+//       alert("Failed to send email.");
+//       console.log("Error:", error);
+//     });
+// }
+
+// Add an event listener to the button
+document.getElementById('sendButton').addEventListener('click', sendemail);
+
+function sendemail(event) { 
+  event.preventDefault();
+
+  const btn = document.getElementById('sendButton');
+  btn.innerHTML = 'Sending...';
+
+  const serviceID = 'service_w5pzxgs';
+  const templateID = 'template_v1ghogl';
+
+  const parms = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  emailjs.send(serviceID, templateID, parms)
+    .then(() => {
+      btn.innerHTML = 'Send';
+      alert("Email sent successfully!");
+    })
+    .catch((error) => {
+      btn.innerHTML = 'Send';
+      alert("Failed to send email.");
+      console.log("Error:", error);
+    });
+}
+
+
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction(){
     var menuBtn = document.getElementById("myNavMenu");
